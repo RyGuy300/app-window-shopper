@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		E85ADC621F953BA000CBA060 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85ADC611F953BA000CBA060 /* AppDelegate.swift */; };
-		E85ADC641F953BA000CBA060 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85ADC631F953BA000CBA060 /* ViewController.swift */; };
+		E85ADC641F953BA000CBA060 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85ADC631F953BA000CBA060 /* MainVC.swift */; };
 		E85ADC671F953BA000CBA060 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85ADC651F953BA000CBA060 /* Main.storyboard */; };
 		E85ADC691F953BA000CBA060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E85ADC681F953BA000CBA060 /* Assets.xcassets */; };
 		E85ADC6C1F953BA000CBA060 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85ADC6A1F953BA000CBA060 /* LaunchScreen.storyboard */; };
 		E85ADC771F953BA100CBA060 /* window_shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85ADC761F953BA100CBA060 /* window_shopperTests.swift */; };
 		E85ADC821F953BA100CBA060 /* window_shopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85ADC811F953BA100CBA060 /* window_shopperUITests.swift */; };
+		E85ADC921F953E5700CBA060 /* CurrenceTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85ADC911F953E5700CBA060 /* CurrenceTxtField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		E85ADC5E1F953BA000CBA060 /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85ADC611F953BA000CBA060 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E85ADC631F953BA000CBA060 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E85ADC631F953BA000CBA060 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		E85ADC661F953BA000CBA060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E85ADC681F953BA000CBA060 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E85ADC6B1F953BA000CBA060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		E85ADC7D1F953BA100CBA060 /* window-shopperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "window-shopperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85ADC811F953BA100CBA060 /* window_shopperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = window_shopperUITests.swift; sourceTree = "<group>"; };
 		E85ADC831F953BA100CBA060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E85ADC911F953E5700CBA060 /* CurrenceTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenceTxtField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,9 @@
 		E85ADC601F953BA000CBA060 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				E85ADC901F953E0F00CBA060 /* Views */,
+				E85ADC8F1F953CC300CBA060 /* Controller */,
 				E85ADC611F953BA000CBA060 /* AppDelegate.swift */,
-				E85ADC631F953BA000CBA060 /* ViewController.swift */,
 				E85ADC651F953BA000CBA060 /* Main.storyboard */,
 				E85ADC681F953BA000CBA060 /* Assets.xcassets */,
 				E85ADC6A1F953BA000CBA060 /* LaunchScreen.storyboard */,
@@ -123,6 +126,22 @@
 				E85ADC831F953BA100CBA060 /* Info.plist */,
 			);
 			path = "window-shopperUITests";
+			sourceTree = "<group>";
+		};
+		E85ADC8F1F953CC300CBA060 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E85ADC631F953BA000CBA060 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E85ADC901F953E0F00CBA060 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E85ADC911F953E5700CBA060 /* CurrenceTxtField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E85ADC641F953BA000CBA060 /* ViewController.swift in Sources */,
+				E85ADC641F953BA000CBA060 /* MainVC.swift in Sources */,
 				E85ADC621F953BA000CBA060 /* AppDelegate.swift in Sources */,
+				E85ADC921F953E5700CBA060 /* CurrenceTxtField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
