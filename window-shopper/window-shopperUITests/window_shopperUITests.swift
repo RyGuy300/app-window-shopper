@@ -23,6 +23,11 @@ class window_shopperUITests: XCTestCase {
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
+    func testGetHours() {
+        XCTAssert(Wage.getHours(forWage: 25, andPrice: 100) == 4)
+        XCTAssert(Wage.getHours(forWage: 15.50, andPrice: 250.53) == 17)
+    }
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
